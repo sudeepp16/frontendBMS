@@ -1,0 +1,48 @@
+<mat-toolbar class="mat-elevation-z3">
+     <p>Book My Show</p>
+     <span class="spacer"></span>
+    <mat-icon>home</mat-icon>
+     <button class="titleButton" routerLink="/userhome">Home</button>
+   </mat-toolbar>
+   <div class="row">
+     <div class="container col-md-6">
+       <div class="row mat-elevation-z3" *ngFor="let theatre of theatreList">
+         <div class="col-md-5 info">
+           <h2>Theatre Name : </h2>
+           <h2>Theatre Location :</h2>
+         </div>
+         <div class="col-md-3 info">
+           <h2> {{theatre.multiplexname}}</h2>
+           <h2>{{theatre.location}}</h2>
+         </div>
+         <div class="col-md-3 info">
+           <button class="theatre-btn" (click)="getScreen(movieId,theatre.multiplexid)">View Theatre</button>
+         </div>
+       </div>
+     </div>
+     <div class="col info mat-elevation-z3 show" *ngIf="showScreen">
+       <h3 style="text-align: center;" *ngIf="showsList.length">Available Screens:</h3>
+       <div  *ngFor="let s of showsList">
+         <div class=" d-flex" style="justify-content: center;">
+           <button type="button" class="theatre-btn" (click)="getShows(movieId,s.screenid)">{{s.screename}}</button>
+         </div>
+       </div>
+     </div>
+     <div class="col info mat-elevation-z3 show" *ngIf="showTime">
+       <h3 style="text-align: center;">Available Shows:</h3>
+       <div *ngFor="let ss of show2List">
+        <div class="col d-flex" style="justify-content: center;">
+          <button type="button" class="theatre-btn" routerLink="/booking" (click)="Book(ss.showsid)">
+              {{ss.showname}}
+            </button>
+         </div>
+     </div>
+    </div>
+   </div>
+   
+   
+   
+   
+   
+   
+   

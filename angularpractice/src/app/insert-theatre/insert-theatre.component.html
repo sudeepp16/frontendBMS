@@ -1,0 +1,32 @@
+<body>
+    <!-- Page Content -->
+    <div *ngIf="flag" class="text-center">
+        Theatre added successfully
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h1 class='text-white'>Register Theatre</h1>
+                <div class="form-login">
+                    <br>
+
+                    <input type="text" id="multiplexname" class="form-control input-sm chat-input" placeholder="Location"  [(ngModel)]="multiplexname" />
+                    <input type="text" name="Location"class="form-control input-sm chat-input" placeholder="TheatreName" [(ngModel)]="Location" />
+                    <div class="wrapper">
+                        <span class="group-btn">
+                            <a (click)="registerTheatre()" class="btn btn-danger btn-md">Register <i class="fa fa-sign-in"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--footer-->
+        <div class="footer text-white text-center">
+
+        </div>
+        <!--//footer-->
+    </div>
+</body>

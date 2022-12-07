@@ -1,0 +1,36 @@
+<body>
+     <!-- Page Content -->
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4 text-center">
+                 <h1 class='text-white'>Register Movie</h1>
+                 <div class="form-login">
+                     <br>
+                     <input type="text" id="" class="form-control input-sm chat-input" placeholder="Movie Title" [(ngModel)]="title">
+                    <input type="url" id="" class="form-control input-sm chat-input" placeholder="Movie Url"  [(ngModel)]="url">
+                    <select class="form-control inputstl" id="23" name="temp" [(ngModel)]="genre">
+                     <option value="default" selected>select</option>
+                     <option value="Thriller">Thriller</option>
+                     <option value="Comedy">Comedy</option>
+                     <option value="Romance">Romance</option>
+                     <option value="Horror" >Horror</option>
+                     </select>
+                     <!-- <input type="text " name=" " class="form-control input-sm chat-input " placeholder="Genre "> -->
+                     <input type="text " name=" " class="form-control input-sm chat-input " placeholder="Price " [(ngModel)]="price" >
+                     <div class=" wrapper ">
+                         <span class="group-btn ">
+                             <a (click)=" registermovie()" class="btn btn-danger btn-md ">Register <i class="fa fa-sign-in "></i></a>
+                         </span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <br>
+         <br>
+         <br>
+         <!--footer-->
+         <div class="footer text-white text-center ">
+         </div>
+         <!--//footer-->
+     </div>
+ </body>

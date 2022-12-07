@@ -1,0 +1,32 @@
+<body>
+     <!-- Page Content -->
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4 text-center">
+                 <h1 class='text-white'>Register Screen</h1>
+                 <div class="form-login">
+                     <br>
+                     <input type="text" id="" class="form-control input-sm chat-input" placeholder="Screen Name"  [(ngModel)]="screenname"/>
+                     <!-- <input type="text" name="" class="form-control input-sm chat-input" placeholder="Theatre"> -->
+                     <select class="form-control text-ligt" [(ngModel)]="selecttheatre">  
+                        <option style="color: black ;background-color: white">Select multiplex</option>  
+                        <option style="color: rgb(245, 241, 241);background-color: black;" *ngFor="let m of theatre" value={{m.multiplexid}}>{{m.multiplexname+"-"+m.location}}</option>  
+                    </select> 
+                     <div class="wrapper">
+                         <span class="group-btn">
+                             <a (click)="registerscreen()" class="btn btn-danger btn-md">Register <i class="fa fa-sign-in"></i></a>
+                         </span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <br>
+         <br>
+         <br>
+         <!--footer-->
+         <div class="footer text-white text-center">
+         </div>
+         <!--//footer-->
+     </div>
+ </body>
+ 

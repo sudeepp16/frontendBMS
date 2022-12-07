@@ -1,0 +1,90 @@
+*:focus {
+     outline: none;
+ }
+
+ .container{
+     height: 490px;
+ }
+ .row{
+     margin: 30px;
+     width: 86%;
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     justify-content: space-between;
+     /* background-color: #F8F9FA; */
+ }
+ .img{
+     padding: 15px;
+ }
+ .info{
+     padding: 20px 0 20px 20px;
+ }
+ .theatre-btn{
+     cursor: pointer;
+     display: block;
+     border: none;
+     border-radius: 5px;
+     background-color: #4285F4;
+     font-weight: lighter;
+     color: white;
+     padding: 12px;
+ }
+ .maincard{
+     padding: 5%;
+     box-shadow: none;
+     background-color: #F8F9FA;
+ }
+ .addcartbutton{
+     display: block;
+     border: none;
+     border-radius: 5px;
+     margin-left: 64%;
+     background-color: #4285F4;
+     font-weight: lighter;
+     color: white;
+ }
+ .product-card{
+     background-color: white;
+ }
+ mat-toolbar{
+     background-color:#4285F4;
+     color: white;
+ }
+ p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+ }
+ .spacer {
+     flex: 1 1 auto;
+   }
+   .titleButton{
+     color: white;
+     background-color: #4285F4;
+     font-size: 17px;
+     border: none;
+     margin-right: 30px;
+     font-weight: bold;
+ }
+ .titleButton:hover{
+     cursor: pointer;
+ }
+ .show{
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    margin: 20px;
+    width: 80%;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

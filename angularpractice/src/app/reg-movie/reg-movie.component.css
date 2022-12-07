@@ -1,0 +1,40 @@
+.container {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     z-index: 9;
+ }
+ .row {
+     justify-content: center;
+ }
+ .btn-submit {
+     border: none;
+     background-color: transparent;
+     font-weight: 500;
+     font-size: 1em;
+ }
+ .card {
+     border: none;
+ }
+ .card-body {
+     padding: 0;
+     border: none;
+     position: relative;
+ }
+ .card-footer {
+     border: none;
+     background-color: #E9E9E9;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .txt {
+     position: absolute;
+     top: 50%;
+     left: 30%;
+     transform: translate(-50%, -50%);
+     font-size: 1.5em;
+     font-weight: 600;
+ }

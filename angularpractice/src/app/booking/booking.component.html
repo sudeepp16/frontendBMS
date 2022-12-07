@@ -1,0 +1,82 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="movie-ticket" #ticket>
+  <div class="container-fluid">
+    <!-- Item -->
+    <div class="ui-item">
+      <!-- Head -->
+      <div class="ui-head">
+        <!-- Background Image -->
+        <img src="../../assets/pop.png" alt="" class="img-responsive bg-img">
+        <!-- Transparent Background -->
+        <div class="ui-trans clearfix">
+          <!-- Image -->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSfAXoxek5zeRbrGCUytdlo7t5UXzXEnJQw&usqp=CAU" alt="" class="img-responsive">
+          <!-- Details -->
+          <div class="ui-details clearfix">
+            <!-- Movie Name -->
+            <h2><a href="#">Movie Tickets</a></h2>
+            <!-- Labels -->
+            <a class="label">Dolby Atmos []</a>
+            <a class="label">4-k Screens</a>
+            <a class="label">Premium Show</a>
+            <!-- Paragraph -->
+            <!-- <p>Ensure the Booking Id's are kept safe and always in your or such person's possession who is considered as your authorized/rightful holder of the same. </p> -->
+           <br/>
+            <h4><span>NAME</span></h4>
+            <h5><p>{{username}}</p></h5>
+            
+            <h4><span>Movie Name</span></h4>
+            <h5><p>{{show.movie.title}}</p></h5>
+           
+            <h4><span>Theatre</span></h4>
+            <h5><p>{{show.shows.screen.multiplex.multiplexname}}</p></h5>
+           
+            <h4><span>Price</span></h4>
+            <h5><p>{{show.movie.price*value}}</p></h5>
+            
+            <h4><span>Show</span></h4>
+            <h5><p>{{show.shows.showname}}</p></h5>
+
+            <h4><span>Screen</span></h4>
+            <h5><p>{{show.shows.screen.screename}}</p></h5>
+
+            <h4><span>Select Date</span></h4>
+            <h5><select class="form-select" [(ngModel)]="selectedDate" (change)="changeDate()" >
+              <option value>Select reservation date</option>
+              <option *ngFor="let d of dateArray" value={{d}}>{{d}}</option>
+          </select></h5>
+
+
+            <h4><span>Available Seats</span></h4>
+            <h5><p>{{show.availableseats}}</p></h5>
+
+            <h4><span>Choose seats</span></h4>
+            <h5><select class="form-select "  aria-label="Default select example" [(ngModel)]="value" (change)="change()" >
+              <option value>Select number of Seats</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+          </select></h5>
+          </div>
+        </div>
+      </div>
+        <!-- Review -->
+        <div class="ui-review">
+          <!-- Heading -->
+          <!-- <h3>Final destination</h3> -->
+          <!-- Paragraph -->
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> -->
+          <!-- Buttons -->
+          <a (click)="bookticket()" class="ui-btn bg-red"><i class="fa fa-ticket"></i> Buy Tickets</a>
+          <!-- <a href="#" class="ui-btn bg-green"><i class="fa fa-dot-circle-o"></i> Buy DVDs</a> -->
+        </div>
+      </div>
+    </div>
+</div>

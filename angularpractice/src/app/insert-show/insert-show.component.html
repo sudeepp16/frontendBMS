@@ -1,0 +1,35 @@
+<body>
+     <!-- Page Content -->
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4 text-center">
+                 <h1 class='text-white'>Register Show</h1>
+                 <div class="form-login">
+                     <br>
+                     <input type="text" id="showname" class="form-control input-sm chat-input" placeholder="Show Name"   [(ngModel)]="showname"/>
+                     <input type="text" name="showtime" class="form-control input-sm chat-input" placeholder="Show time" [(ngModel)]="showtime">
+                     <select class="form-control" [(ngModel)]="selecttheatre" (change)="getScreens()">  
+                        <option >Select multiplex</option>  
+                        <option style="color: #000;" *ngFor="let m of theatre" value={{m.multiplexid}}>{{m.multiplexname+"-"+m.location}}</option>  
+                    </select>
+                    <select class="form-control" [(ngModel)]="selectscreen">  
+                        <option >Select screen</option>  
+                        <option style="color: #000;" *ngFor="let s of screen" value={{s.screenid}}>{{s.screename}}</option>  
+                    </select>
+                     <div class="wrapper">
+                         <span class="group-btn">
+                             <a (click)="registershows()" class="btn btn-danger btn-md">Register <i class="fa fa-sign-in"></i></a>
+                         </span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <br>
+         <br>
+         <br>
+         <!--footer-->
+         <div class="footer text-white text-center">
+         </div>
+         <!--//footer-->
+     </div>
+ </body>

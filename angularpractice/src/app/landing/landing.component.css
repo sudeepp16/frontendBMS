@@ -1,0 +1,52 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.titleButton {
+    color: #fff;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: Mandali, sans-serif;
+}
+
+.titleButton:hover {
+    color: black;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+mat-toolbar {
+    background-color: transparent;
+    color: #343A40;
+    padding: 20px 100px 0 200px;
+    height: 50px;
+    width: 100%;
+}
+
+.example {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+.started {
+    position: absolute;
+    z-index: 9;
+    top: 70%;
+    left: 83%;
+}
+
+.btn-started {
+    border-radius: 20px;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+    border: none;
+    background-image: linear-gradient(to right top, #d16ba5, #ba83ca, #79b3f4, #41dfff);
+}

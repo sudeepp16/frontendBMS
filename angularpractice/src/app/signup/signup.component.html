@@ -1,0 +1,40 @@
+<body>
+    <!-- Page Content -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h1 class='text-white'>Book My Show</h1>
+                <div class="form-login">
+                    <br>
+                    <form >
+                        <div class="form-group">
+                    <div class="row">
+                        <button class="btn col" routerLink="/login">Login</button>
+                        <button class="btn col">Sign Up</button>
+                    </div>
+                    <input type="text" name="userName" class="form-control input-sm chat-input" placeholder="username" [(ngModel)]="userName"/>
+                    <input type="email" name="email" class="form-control input-sm chat-input"  placeholder="Email" [(ngModel)]="email" >
+                    <input type="number" name="mobileNumber" class="form-control input-sm chat-input" placeholder="mobileno"  [(ngModel)]="mobileNumber">
+                    <input type="password"  name="password" class="form-control input-sm chat-input" placeholder="password"  [(ngModel)]="password" />
+                    <input type="password" name="" class="form-control input-sm chat-input"  placeholder="Confirm Password">
+                    <div class="wrapper">
+                    </div>
+                        <span class="group-btn" (click)="registeruser()">
+                            <a  class="btn btn-danger btn-md">Sign Up <i class="fa fa-sign-in"></i></a>
+                        </span>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--footer-->
+        <div class="footer text-white text-center">
+
+        </div>
+        <!--//footer-->
+    </div>
+</body>

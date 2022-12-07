@@ -1,0 +1,33 @@
+<body>
+    <!-- Page Content -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h1 class='text-white'>Book My Show</h1>
+                <div class="form-login">
+                    <br>
+                    <div class="row" style="padding: 40px;">
+                        <button class="btn col">Login</button>
+                        <button class="btn col" routerLink="/sign-up">Sign Up</button>
+                    </div>
+                    <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" [(ngModel)]="username"/>
+                    <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" [(ngModel)]="password" />
+                    <div class="wrapper">
+                        <span class="group-btn">
+                            <a (click)="validatelogin()" class="btn btn-danger btn-md">login <i class="fa fa-sign-in"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--footer-->
+        <div class="footer text-white text-center">
+
+        </div>
+        <!--//footer-->
+    </div>
+</body>

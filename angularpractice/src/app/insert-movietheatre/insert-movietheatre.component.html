@@ -1,0 +1,67 @@
+
+
+ 
+<div class=" wrapper ">
+    <h3>Assign Theatre with Movie</h3>
+</div>
+                 <div class="row  outer-box">
+                     <div class="col-md-6">
+                         <div class="box">
+                           
+
+                             <br>
+                            <div class="row">
+                             <label class="col" for="cars">Movie name :</label>
+                             <select class="col" (change)="getTheatres()" [(ngModel)]="movie" >
+                              <option style="color: #000;" *ngFor="let m of movieList" value={{m.movieid}}>{{m.title}}</option>
+                            </select>
+                          </div>
+
+                          <div class="row">
+                            <label class="col" for="cars">Theatre name :</label>
+                            <select class="col" (change)="getScreens($event)" [(ngModel)]="theatre">
+                              <option style="color: #000;" *ngFor="let t of theatreList" value={{t.multiplexid}}>{{t.multiplexname}}</option>
+            
+                            </select>
+                          </div>
+
+                          <div class="row"> 
+                             <label  class="col" for="cars">Screen name :</label>
+                            <select class="col" (change)="getShows()" [(ngModel)]="screen">
+                              <option style="color: #000;" *ngFor="let m of screenList" value={{m.screenid}}>{{m.screename}}</option>
+                            </select>
+                          </div>
+
+                          <div class="row">
+                           <label  class="col" for="cars">Shows name:</label>
+                            <select  class="col" [(ngModel)]="show">
+                              <option value={{0}}>Select Show</option>
+                              <option style="color: #000;" *ngFor="let m of showList" value={{m.showsid}}>{{m.showname}}</option>
+                            </select>
+                          </div>
+                        </div>
+                     </div>
+                        <div class="col-md-6">
+                          <div class="box" style="padding-top:150px;">
+                          <div class="row">
+                            <label class="col" for="cars">Start date:</label>
+                             <input class="col" type="date" class="form-control input-sm chat-input" placeholder="Enter Starting date:" [(ngModel)]="fromdate" />
+                             </div>
+                             <div class="row">
+                             <label class="col" for="cars">End date:</label>
+                             <input class="col" type="date" class="form-control input-sm chat-input" placeholder="Enter Ending date:" [(ngModel)]="todate" />
+                            </div>
+                            <div class="row">
+                             <label class="col" for="cars">Available Seats:</label>
+                             <input class="col" type="text" class="form-control input-sm chat-input" placeholder="Enter available Seats" [(ngModel)]="availableSeats" />
+                            </div>
+                            
+                         </div>
+                        </div>
+                        </div>
+                        <div class=" wrapper ">
+                          <span class="group-btn" style="color: #fff;">
+                              <a (click)="linkMovieAndShow()" class="btn btn-danger btn-md ">Register <i class="fa fa-sign-in "></i></a>
+                          </span>
+                      </div>
+                
